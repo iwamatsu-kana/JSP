@@ -17,5 +17,14 @@
 <p>1+2=<%=add(1,2) %></p>
 <p>1+2=<%=add(3,4) %></p>
 
+<%! static int countA=0; %>
+<% int countB=0;
+countA++;
+countB++;
+%>
+
+<p>宣言による変数countA=<%=countA %></p>
+<p>スクリプトレットによる変数countB=<%=countB %></p>
+
 </body>
 </html>
